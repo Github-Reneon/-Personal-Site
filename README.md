@@ -18,4 +18,4 @@ www.andrewlovick.com
 Sure send a pull request. Just make sure to sign the end of the content with your name, and that it is a html or txt file. PHP is supported but I will not accept PHP pages from people I don't know.
 
 ## Why no javascript?
-Isn't it nicer like this?
+Isn't it nicer like this? :)
