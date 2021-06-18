@@ -24,6 +24,7 @@
 						<HR>
 					</div>
 					<?php include 'footer.php' ?>
+					<?php echo '.' ?>
 				</div>
 			</main>
 		</div>
