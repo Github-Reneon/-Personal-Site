@@ -1,7 +1,7 @@
 # Another take at a personal website.
 This is the source to my personal website. I made it in a day.
 
-## Writen In
+## Written In
 - html
 - css
 - php
