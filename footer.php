@@ -4,3 +4,5 @@
 		<td><a href="post-list.php">Posts</a></td>
 	</tr>
 </table>
+	<br>
+	<br>
