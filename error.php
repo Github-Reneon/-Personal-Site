@@ -9,7 +9,12 @@
 				<br>
 				<br>
 				<br>
-				<h1>403</h1>
+				<?php 
+					$error = $_GET['err'];
+					if ($error == '')
+						$error = 'Unspecified';
+					echo '<h1>Error: ' . $error . '</h1>';
+				?>
 				<HR>
 				<img src="pix/blue-marvel.png" class="rounded" style="max-width: 600px;">
 				<HR>

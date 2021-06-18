@@ -14,13 +14,15 @@
 					</div>
 					<div class="col-md" style="align-items: center; display: flex;">
 						<div>
+							<br>
 							<p>Heyo! I'm Andy. I'm a guy who:</p>
 							<ul>
 								<li><a href="https://www.github.com/github-reneon">Makes software</a> &#128421</li>
 								<li>Works as a software support engineer &#128346</li>
 								<li><a href="https://steamcommunity.com/id/Reneon">Plays games</a> &#128481</li>
-								<li><a href="https://www.youtube.com/watch?v=dKG68y2VC0Y&list=PLI76N29qybf8a9pkSzD9X0PX3a3PgO2_-">Learns Latin</a> &#128220</li>
+								<li><a href="https://www.github.com/github-reneon/personal-site">I made this site!</a> &#127760</li>
 								<li><a href="post-list.php">And I've recently started writing</a> &#128466</li>
+								<li><a href="https://www.youtube.com/watch?v=dKG68y2VC0Y&list=PLI76N29qybf8a9pkSzD9X0PX3a3PgO2_-">As well as learning Latin</a> &#128220</li>
 							</ul>
 						</div>
 					</div>
