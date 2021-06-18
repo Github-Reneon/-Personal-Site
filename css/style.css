@@ -1,0 +1,26 @@
+.content{
+	text-align: center;
+}
+
+.imgleft {
+        display: block;
+        float: left;
+        padding: 20px;
+        clear: both;
+        max-height: 300px;
+        max-width: 300px;
+}
+
+body {
+	background: #3c3c3c;
+	color: white;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+}
+
+li {
+	text-align: left;
+}
