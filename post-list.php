@@ -1,5 +1,6 @@
 <html>
 	<?php include 'header.php' ?>
+	<?php include 'connectsql.php' ?>
 	<body>
 		<div class="content">
 			<header>
@@ -9,28 +10,25 @@
 			</header>
 			<main class="container-md">
 				<div class="row">
-					<?php include 'footer.php'; ?>
-					<HR>
-				</div>
-				<div class="row">
 				<?php
-					$files = glob("content/*", GLOB_BRACE);
-					if (count($files) > 0) {
-						echo "<table class=\"table table-dark table-striped\">";
-						for($i = 0; $i < count($files); ++$i) {
-							echo "<tr> ";
-							$fileinfo = pathinfo($files[$i]);
-							echo "<td>" . "&#9989 " . $fileinfo['filename'] . "</td>";
-							echo "<td>" . "<a href=\"post.php?content=" . $fileinfo['filename'] . "\">" . "link" . "</a>" . "</td>";
-							echo "</tr>";
-						}	
-						echo "</table>";
+					$sql = "select posts.id, username, title  from posts inner join users on posts.author_id = users.id limit 100";
+					$result = mysqli_query($db_handle, $sql);
+					echo "<table class=\"table table-dark table-striped\">";
+					echo "<tr><th>Title</th><th>Author</th><th>Link</th>";
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo "<tr>";
+						echo "<td>" . "&#10095 " . $row['title'] . "</td>";
+						echo "<td>" . $row['username'] . "</td>";
+						echo "<td>" . "<a href=\"https://andrewlovick.com/post.php?id=" . $row['id'] . "\">click</a>"  . "</td>";
+						echo "</tr>";
 					}
+					echo "</table>";
 				?>
 				</div>
 				<div class="row">
 					<HR>
 					<?php include 'footer.php'; ?>
+					<?php include 'closesql.php'; ?>
 				</div>
 			</main>
 		</div>

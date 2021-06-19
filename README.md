@@ -9,13 +9,14 @@ This is the source to my personal website. I made it in a day.
 ## Hosted On
 - nginx
 - php
+- mariadb
 - certbot
 
 ## Where is it?
 www.andrewlovick.com
 
 ## Can I add a content page?
-Sure send a pull request. Just make sure to sign the end of the content with your name, and that it is a html or txt file. PHP is supported but I will not accept PHP pages from people I don't know.
+I'm working on an sql solution right now with user accounts. I'll when it's working the README will say.
 
 ## Why no javascript?
 Isn't it nicer like this? 

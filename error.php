@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div class="content">
-			<main class="container">
+			<main class="container-sm">
 				<br>
 				<br>
 				<br>
@@ -16,7 +16,7 @@
 					echo '<h1>Error: ' . $error . '</h1>';
 				?>
 				<HR>
-				<img src="pix/blue-marvel.png" class="rounded" style="max-width: 600px;">
+				<img src="pix/blue-marvel.png" class="img-fluid rounded"> 
 				<HR>
 				<p>Try again next time...</p>
 			</main>

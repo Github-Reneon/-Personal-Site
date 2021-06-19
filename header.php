@@ -6,3 +6,4 @@
 	<meta charset="utf-8" />
 	<title>Andrew Lovick</title>
 </head>
+<?php $connected = false; ?>

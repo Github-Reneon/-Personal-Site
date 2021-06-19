@@ -1,29 +1,33 @@
 <html>
 	<?php include 'header.php' ?>
+	<?php include 'connectsql.php' ?>
 	<body>
 		<?php 
-			$content = $_GET['content'];
+			$content = $_GET['id'];
 			if ($content == ""){
-				header("Location: https://andrewlovick.com/404.php");
+				header("Location: https://andrewlovick.com/error.php?err=404");
 			}
-			$contentfile = glob("content/" . $content . ".*", GLOB_BRACE);
-		        if (count($contentfile) <> 1){
-				header("Location: https://andrewlovick.com/404.php");
-			}
+			if (is_numeric($content) <> true) {
+				header("Location: https://andrewlovick.com/error.php?err=Nice try");
+			}	
+			$sql = "select title, content from posts where id = " . $content;
+			$result = mysqli_query($db_handle, $sql);
+			$row = mysqli_fetch_assoc($result);
 		?>
 		<div class="content">
-			<header>	
+			<header class="sticky-top" style="background: #3c3c3c;">	
 				<br>
-				<h1><?php echo $content ?></h1>
+				<h1><?php echo $row['title'] ?></h1>
 				<HR>
 			</header>
 			<main class="container-md">
 				<div class="row">
 					<div style="text-align: left;">
-						<?php include $contentfile[0] ?>
+						<?php echo $row['content'] ?>
 						<HR>
 					</div>
 					<?php include 'footer.php' ?>
+					<?php include 'closesql.php' ?>
 				</div>
 			</main>
 		</div>

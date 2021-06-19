@@ -1,26 +1,21 @@
-<?php 
-	$files = glob("content/*", GLOB_BRACE);
+<?php
+	include 'connectsql.php';
 	
-	$size = 10;
+	echo "<table class=\"table table-dark table-striped\">";
+	
+	$sql = "select posts.id, username, title  from posts inner join users on posts.author_id = users.id limit 10";
+	
+	$result = mysqli_query($db_handle, $sql);
+	echo "<tr><th>Name</th><th>Author</th><th>Link</th>";
 
-	if ($size > count($files)) {
-		$size = count($files);
+	while ($row = mysqli_fetch_assoc($result)) {
+		echo "<tr>";
+		echo "<td>" . "&#10095 " . $row['title'] . "</td>";
+		echo "<td>" . $row['username'] . "</td>";
+		echo "<td>" . "<a href=\"https://andrewlovick.com/post.php?id=" . $row['id'] . "\">click</a>"  . "</td>";
+		echo "</tr>";
 	}
-	
-	if ($size <> 0) {
-		echo "<br>";
-		echo "<h1>Example Posts</h1>";
-		echo "<table style=\"width:100%\" class=\"table table-dark table-striped\">";
-		echo "<tr> <th>Name</th> <th>Link</th> </tr>";
-		for($i = 0; $i < count($files); ++$i) {
-			$fileinfo = pathinfo($files[$i]);
-			echo "<tr>";
-			echo "<td>" . "&#9989 " . $fileinfo['filename'] . "</td>";
-			echo "<td>" . "<a href=\"post.php?content=" . $fileinfo['filename'] . "\">". "link" . "</a>" . "</td>"; 
-			echo "</tr>";
-		}
-		echo "</table>";
-	} else {
-		echo "I've not made an editorial yet. Come back soon!";
-	}
+	echo "</table>";
+
+	include 'closesql.php';	
 ?>
