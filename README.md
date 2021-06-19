@@ -18,5 +18,9 @@ www.andrewlovick.com
 ## Can I add a content page?
 I'm working on an sql solution right now with user accounts. I'll when it's working the README will say.
 
+## What's the plan for the SQL database?
+Please see this ERD for design.
+![My ERD!](https://i.imgur.com/F8C5qLT.jpg)
+
 ## Why no javascript?
 Isn't it nicer like this? 
