@@ -16,7 +16,7 @@ This is the source to my personal website. I made it in a few days.
 www.andrewlovick.com
 
 ## Can I add a content page?
-I'm working on an sql solution right now with user accounts. I'll when it's working the README will say.
+I've replaced content pages with an SQL implementation. Currently I'm not accepting new users but send me a DM and I'll be sure to read it!
 
 ## What's the plan for the SQL database?
 Please see this ERD for design.
