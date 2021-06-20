@@ -11,7 +11,7 @@
 			<main class="container-md">
 				<div class="row">
 				<?php
-					$sql = "select posts.id, username, title  from posts inner join users on posts.author_id = users.id limit 100";
+					$sql = "select posts.id, username, title  from posts inner join users on posts.author_id = users.id order by id desc limit 100";
 					$result = mysqli_query($db_handle, $sql);
 					echo "<table class=\"table table-dark table-striped\">";
 					echo "<tr><th>Title</th><th>Author</th><th>Link</th>";

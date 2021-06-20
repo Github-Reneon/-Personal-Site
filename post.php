@@ -23,7 +23,9 @@
 			<main class="container-md">
 				<div class="row">
 					<div style="text-align: left;">
-						<?php echo $row['content'] ?>
+						<div class="col" style="hyphens: auto;">
+							<?php echo $row['content'] ?>
+						</div>
 						<HR>
 					</div>
 					<?php include 'footer.php' ?>

@@ -3,7 +3,7 @@
 	
 	echo "<table class=\"table table-dark table-striped\">";
 	
-	$sql = "select posts.id, username, title  from posts inner join users on posts.author_id = users.id limit 10";
+	$sql = "select posts.id, username, title from posts inner join users on posts.author_id = users.id order by id desc limit 10";
 	
 	$result = mysqli_query($db_handle, $sql);
 	echo "<tr><th>Name</th><th>Author</th><th>Link</th>";
