@@ -1,5 +1,5 @@
 # Another take at a personal website.
-This is the source to my personal website. I made it in a day.
+This is the source to my personal website. I made it in a few days.
 
 ## Written In
 - html
