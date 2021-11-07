@@ -26,7 +26,7 @@
 	$count = $vals['count(username)'];
 	
 	if ($count != "1") {
-		header("Location: https://andrewlovick.com/newpost.php?err=Incorrect username. " . $count);
+		header("Location: https://andrewlovick.com/newpost.php?err=Incorrect username. ");
 	}
 	else {
 

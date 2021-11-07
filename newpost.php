@@ -8,18 +8,18 @@
 				<h1>New Post</h1>
 				<HR>
 			</header>
-			<?php
-				$err = $_GET['err'];
-				if ($err <> "") {
-					echo $err;
-				}
-				$sub = $_GET['sub'];
-				if ($sub <> "") {
-					echo $sub;
-				}
-			?>
 			<div class="container">
 				<div class="row">
+					<?php
+						$err = $_GET['err'];
+						if ($err <> "") {
+							echo "<div class=\"alert alert-danger\" role=\"alert\">" . $err . "</div>";
+						}
+						$sub = $_GET['sub'];
+						if ($sub <> "") {
+							echo "<div class=\"alert alert-success\" role=\"alert\">" . $sub . "</div>";
+						}
+					?>
 					<form action="submitpost.php" method="post">
 						<div class="input-group mb-3">
 							<div class="input-group-prepend">
