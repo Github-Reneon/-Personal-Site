@@ -27,7 +27,7 @@
 							<p>Heyo! I'm Andy. I'm a guy who:</p>
 							<ul>
 								<li><a class="link-primary" href="https://www.github.com/github-reneon">Makes software</a> &#128421</li>
-								<li>Works as a software support engineer &#128346</li>
+								<li>Works as a software engineer &#128346</li>
 								<li>Plays games &#128481</li>
 								<li><a class="link-primary" href="https://www.github.com/github-reneon/personal-site">I made this site!</a> &#127760</li>
 								<li><a class="link-primary" href="post-list.php">And I've recently started writing</a> &#128466</li>
